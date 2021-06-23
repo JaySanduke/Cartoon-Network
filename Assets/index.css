@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: Open Sans,open-sans,sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.header{
+    display: flex;
+    background-color: white;
+}
+
+.header-container{
+    display: inline-flex;
+    padding: 40px 40px 40px 90px;
+}
+
+.header-logo-container{
+    align-self: center;
+    font-size: 0;
+    height: 72px;
+    line-height: 72px;
+    margin-right: 40px;
+    white-space: nowrap;
+
+}
+
+.nav-list{
+    display: inline-flex;
+    margin-left: 32px;
+}
+
+.nav-tab{    
+    display: block;
+    padding: 25px 5px 16px 25px;
+    position: relative;
+}
+
+.navbar .nav-list .nav-tab a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.navbar .nav-list .nav-link::after{
+    content: '';
+    background-color: #02a6d6;
+    position: absolute;
+    height: 4px;
+    width: 0%;
+    left: 50%;
+    bottom: -35%;
+    border-radius: 1px;
+    transition: all 180ms ease;
+}
+
+.navbar .nav-list .nav-link:hover::after{
+    left: 0%;
+    width: 100%;
+}
+
+section{
+    background-color: black;
+    color: white;
+    padding: 25px 40px;
+}
+
+.displaytile{
+    margin: 1rem 4vw 1rem 4vw;
+    padding: 0;    
+}
+
+.featured-title{
+    display: block;
+    width: 100%;
+    padding: 0 0 8px 0;    
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.tilescontainer{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.tile{
+    width: 31.9%;
+    margin: 4px;
+    position: relative;
+    color: white;
+    transition: 0.5s linear;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+    transition: 0.5s ease-in-out;
+}
+
+.overlay::after{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.tile img:hover{    
+    transform:scale(1.1);
+    filter:brightness(50%);    
+}
+
+.tile:nth-child(n + 4){
+    width: 23.5%;
+    height: 100%;
+}
+  
+.tile-text{
+    align-items: flex-end;
+    align-content: flex-end;
+    background: linear-gradient(
+180deg
+,transparent,rgba(0,0,0,.5) 50%,rgba(0,0,0,.8));
+    bottom: 0;
+    color: #fff;
+    flex-wrap: wrap;
+    padding: 0 0 12px 12px;
+    position: absolute;
+    width: 100%;
+}
+
+.tile-title{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.tile-time{
+    display: block;
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+.about{
+    margin: 3rem 4vw 1rem 4vw;
+}
+
+.about h1{
+    font-size: 1.4rem;
+}
+
+.about p{
+    display: block;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 1.8;
+    font-weight: 100;
+    font-size: .88rem;
+}
+
+.contact{
+    margin: 3rem 4vw 1rem 4vw;
+}
+
+.contact h1{
+    font-size: 1.4rem;
+}
+
+.contact p{        
+    display: block;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 1.8;
+    font-weight: 100;
+    font-size: .88rem;
+}
+
+.contact p a{
+    text-decoration: none;
+    color: white;
+}
+
+.contact p a:hover{
+    color: #17a2b8;
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+    padding-top: 50px;
+    width: 100%;
+    height: auto;
+}
+
+.footer-top{
+    background-color: #202020;
+    padding: 30px 0 50px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.footer-links li{
+    display: inline-block;
+    padding: 1rem;
+}
+
+.footer-links li a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer-links li a:hover{
+    color: #17a2b8;
+}
+
+.footer-top .copyright{
+    color: grey;
+    font-size: .7em;
+    padding: 30px 15px 0;
+}
+
+.footer-bottom{
+    background: black;
+    text-align: center;
+}
+
+.corus{
+    background: url(coruslogo.svg);    
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 75px;
+    vertical-align: bottom;
+    width: 100px;
+}
+.others-corus-sites{
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: .5px;
+    line-height: 1;
+    opacity: .8;
+}
+#DisneyCh {
+  background: url(disneychannel.svg);
+}
+#Disneyjr {
+  background: url(disneyjr.svg);
+}
+#Teletoon {
+  background: url(teletoon.svg);
+}
+#YTV {
+  background: url(ytv.svg);
+}
+#Treehouse {
+  background: url(treehouse.svg);
+}
+
+.partners a{
+    background-position: 50%;
+    background-size: contain;
+    display: inline-block;
+    height: 75px;
+    vertical-align: bottom;
+    width: 100px;
+    margin: 20px 30px 0 30px;
+    background-repeat: no-repeat !important;
+    opacity: 0.6;    
+}
+
+@media (max-width: 1200px) {
+    .tile {
+      width: 48% !important;
+    }
+    .tile:nth-child(n + 5) {
+      width: 31.6% !important;
+    }
+    .tile:last-child {
+      display: none;
+    }
+  }
+  @media (max-width: 1002px) {
+    .tile:nth-child(n + 0) {
+      width: 47% !important;
+    }
+    .tile:nth-child(1) {
+      width: 100% !important;
+    }
+    .tile:last-child {
+      display: block;
+    }
+  }
+  @media (max-width: 609px) {
+    .tile:nth-child(n + 2) {
+      width: 46% !important;
+    }
+  }
+  @media (max-width: 576px) {
+    .tile:nth-child(n + 0) {
+      width: 100% !important;
+    }
+  }
+  @media (max-width: 325px) {
+    .menu-item a {
+      padding: 0;
+      margin: 5px;
+    }
+}
